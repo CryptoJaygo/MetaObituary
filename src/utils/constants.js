@@ -1,5 +1,4 @@
 import metaAbi from "./MetaObituary.json";
-// export const INFURA_ID = '654aa5927b434b8397d5c465f97c12da'
 export const INFURA_ID = "98e982ed3bc64ef0842f1f1df8316481";
 
 export const LINKS = [
