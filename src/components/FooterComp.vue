@@ -17,6 +17,18 @@ import { LINKS } from "@/utils/constants";
 					>{{ title }}</a
 				>
 			</div>
+			<div class="links mt-[2.2em]">
+				<a
+					href="https://github.com/CryptoJaygo/MetaObituary"
+					class="mr-5 text-font-light underline"
+					target="_blank"
+					>Github</a
+				>
+				<span
+					>We accept donations. Ethereum address:
+					0xD52A88754e37722D0005B918955B905F6Bc170BA</span
+				>
+			</div>
 		</div>
 	</section>
 </template>

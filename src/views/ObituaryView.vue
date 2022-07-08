@@ -78,9 +78,6 @@ const formatUTCDate = (date) => {
 							><i>-</i
 							><span>{{ formatUTCDate(item.death) }}</span>
 						</p>
-						<p class="inline-block mb-1.5 sm:ml-1.5">
-							{{ item.careOf }}
-						</p>
 					</div>
 					<p class="break-all">
 						{{ item.description }}

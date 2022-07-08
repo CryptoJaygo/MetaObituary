@@ -11,7 +11,6 @@ import { useConnectStore } from "@/stores/connect";
 
 const formLabelAlign = reactive({
 	name: "",
-	careOf: "",
 	description: "",
 	brith: "",
 	death: "",
@@ -19,17 +18,19 @@ const formLabelAlign = reactive({
 
 const connectStore = useConnectStore();
 
-const isReady = computed(() => {
-	const { name, description, careOf, brith, death } = formLabelAlign;
-	return name && description && careOf && brith && death;
-});
-
 const fileList = ref([]);
 const picLimit = ref(1);
 const picPreviewDialogVisible = ref(false);
 const dialogImageUrl = ref("");
 
 const uploadRef = ref(null);
+
+const isReady = computed(() => {
+	const { name, description, brith, death } = formLabelAlign;
+	return (
+		name && description && brith && death && fileList.value && fileList.value.length > 0
+	);
+});
 
 const userAccount = () => {
 	const _account = useStorage("userAccount", null, undefined, {
@@ -166,12 +167,6 @@ const genNft = () => {
 							style="width: 100%"
 						/>
 					</el-col>
-				</el-form-item>
-				<el-form-item label="In The Care of">
-					<el-input
-						placeholder="In The Care of"
-						v-model="formLabelAlign.careOf"
-					/>
 				</el-form-item>
 				<el-form-item label="Photos">
 					<el-upload

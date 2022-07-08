@@ -11,12 +11,12 @@ export const LINKS = [
 		url: "https://twitter.com/williamimimimi",
 	},
 	{
-		title: "@meditic",
-		url: "https://twitter.com/meditic",
-	},
-	{
 		title: "@coolb",
 		url: "https://twitter.com/CoolB__",
+	},
+	{
+		title: "@meditic",
+		url: "https://twitter.com/meditic",
 	},
 ];
 
