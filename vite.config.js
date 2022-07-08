@@ -45,5 +45,6 @@ export default defineConfig({
 		hmr: {
 			overlay: false,
 		},
+		port: 9527
 	},
 });
