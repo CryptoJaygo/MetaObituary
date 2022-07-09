@@ -2692,7 +2692,7 @@ blockquote {
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 60vh;
-	padding: 25vh 7vw 26vh;
+	padding: 10vh 7vw 16vh;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
