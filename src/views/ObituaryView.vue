@@ -41,10 +41,10 @@ const formatUTCDate = (date) => {
 			<SkeletonComp :loading="!(datas && datas.length > 0) && isLoading">
 				<div
 					v-for="item of datas"
-					class="ob-item flex p-1.5 mb-4 items-center transition-all ease-linear hover:scale-[1.01] hover:shadow-2xl"
+					class="ob-item flex flex-wrap md:flex-nowrap p-1.5 mb-4 items-center transition-all ease-linear hover:scale-[1.01] hover:shadow-2xl"
 				>
 					<div
-						class="pic-box lg:w-40 sm:w-60 w-64 mr-1.5 sm:mr-2.5 md:mr-5"
+						class="pic-box lg:w-40 sm:w-60 w-64 mr-1.5 sm:mr-2.5 md:mr-5 min-w-[150px]"
 					>
 						<img :src="item.image || altPic" alt="altPic" />
 					</div>
@@ -68,7 +68,9 @@ const formatUTCDate = (date) => {
 				</div>
 			</SkeletonComp>
 		</template>
-		<div v-else class="text-center text-xl pt-6">There are no obituaries at this time.</div>
+		<div v-else class="text-center text-xl pt-6">
+			There are no obituaries at this time.
+		</div>
 	</div>
 </template>
 <style lang="scss" scoped>
